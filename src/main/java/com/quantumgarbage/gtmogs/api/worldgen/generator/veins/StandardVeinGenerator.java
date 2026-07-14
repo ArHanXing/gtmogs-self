@@ -49,7 +49,8 @@ public class StandardVeinGenerator extends VeinGenerator {
             .xmap(StandardVeinGenerator::new, StandardVeinGenerator::getBlocks);
     // spotless:on
     public static final MapCodec<StandardVeinGenerator> CODEC = Codec.mapEither(CODEC_SEPARATE, CODEC_LIST)
-            .xmap(Either::unwrap, Either::left);
+            .xmap(Either::unwrap, gen -> gen.block != null && gen.deepBlock != null && gen.netherBlock != null
+                    ? Either.left(gen) : Either.right(gen));
 
     public NonNullSupplier<? extends Block> block;
     public NonNullSupplier<? extends Block> deepBlock;

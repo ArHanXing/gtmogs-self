@@ -1,5 +1,24 @@
 # GTMOGS - GregTech Modern Ore Generation: Standalone
 
+## 成功的KJS脚本示例
+```javascript
+GTMOGSServerEvents.oreVeins(event => {
+    event.add("kubejs:custom_vein", vein => {
+        vein.weight(200)
+        vein.clusterSize(40)
+        vein.density(0.25)
+        vein.discardChanceOnAirExposure(0)
+
+        vein.layer("deepslate")
+        vein.dimensions("minecraft:overworld")
+        vein.heightRangeUniform(-60, 20)
+
+        vein.standardVeinGenerator(generator => generator
+            .withBlock(() => Block.getBlock('minecraft:gold_block'))
+        )
+    })
+})
+```
 ## An Unfortunate Disclaimer
 After having isolated the ore generation from GT:M I discovered that the KubeJS integration was broken - even in the original 1.21 branch of GT:M.
 I have not been able to restore it in this mod, so to use this mod in your pack you'll have to either fork it and add the ores yourself to `data/worldgen/GTOreVeins.java` or find a way to generate the .json entries for each ore vein yourself.

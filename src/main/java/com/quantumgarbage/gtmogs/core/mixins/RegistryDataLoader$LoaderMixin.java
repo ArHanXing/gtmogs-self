@@ -21,6 +21,6 @@ public class RegistryDataLoader$LoaderMixin<T> {
     @Inject(method = "loadFromResources", at = @At("TAIL"))
     private void gtmogs$postKJSVeinEvents(ResourceManager resourceManager,
                                           RegistryOps.RegistryInfoLookup registryInfoLookup, CallbackInfo ci) {
-        MixinHelpers.postKJSVeinEvents(this.registry);
+        MixinHelpers.postKJSVeinEvents(this.registry, registryInfoLookup);
     }
 }

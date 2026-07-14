@@ -25,6 +25,7 @@ import com.quantumgarbage.gtmogs.GTMOGS;
 import com.quantumgarbage.gtmogs.api.registry.GTRegistries;
 import com.quantumgarbage.gtmogs.api.worldgen.generator.VeinGenerator;
 import com.quantumgarbage.gtmogs.api.worldgen.generator.veins.*;
+import dev.latvian.mods.rhino.util.HideFromJS;
 import it.unimi.dsi.fastutil.ints.IntIntPair;
 import lombok.Getter;
 import lombok.Setter;
@@ -185,6 +186,7 @@ public class OreVeinDefinition {
         return this;
     }
 
+    @HideFromJS
     public OreVeinDefinition biomes(HolderSet<Biome> biomes) {
         this.biomes = Objects.requireNonNullElseGet(biomes, HolderSet::empty);
         return this;
