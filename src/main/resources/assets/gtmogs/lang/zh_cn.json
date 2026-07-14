@@ -1,0 +1,48 @@
+{
+  "_comment": "GTMOGS - 简体中文翻译",
+
+  "command.gtmogs.dump_data.success": "已将注册表 %2$s 中的 %1$s 个资源转储到 %3$s",
+  "command.gtmogs.place_vein.failure": "无法在位置 %2$s 放置矿脉 %1$s",
+  "command.gtmogs.place_vein.success": "已在位置 %2$s 放置矿脉 %1$s",
+  "command.gtmogs.share_prospection_data.notification": "%s 正在与你共享勘探数据！",
+
+  "behavior.prospector.added_waypoint": "已创建名为 %s 的路径点！",
+
+  "gtmogs.button.ore_veins": "显示 GT 矿脉",
+  "gtmogs.button.bedrock_fluids": "显示基岩流体矿脉",
+  "gtmogs.button.hide_depleted": "隐藏已枯竭矿脉",
+  "gtmogs.button.show_depleted": "显示已枯竭矿脉",
+  "gtmogs.recipe_type.show_recipes": "显示配方",
+
+  "gtmogs.direction.tooltip.up": "上",
+  "gtmogs.direction.tooltip.down": "下",
+  "gtmogs.direction.tooltip.left": "左",
+  "gtmogs.direction.tooltip.right": "右",
+  "gtmogs.direction.tooltip.back": "后",
+  "gtmogs.direction.tooltip.front": "前",
+
+  "gtmogs.tooltip.status.trinary.false": "否",
+  "gtmogs.tooltip.status.trinary.true": "是",
+  "gtmogs.tooltip.status.trinary.unknown": "未知",
+
+  "gtmogs.jei.ore_vein_diagram": "矿脉图",
+  "gtmogs.jei.ore_vein_diagram.chance": "§e几率: %s§r",
+  "gtmogs.jei.ore_vein_diagram.spawn_range": "生成范围:",
+  "gtmogs.jei.ore_vein_diagram.weight": "权重: %s",
+  "gtmogs.jei.ore_vein_diagram.dimensions": "维度:",
+
+  "gtmogs.minimap.ore_vein.depleted": "已枯竭",
+  "message.gtmogs.new_veins.amount": "勘探到 %d 个新矿脉！",
+  "message.gtmogs.new_veins.name": "勘探到 %s！",
+  "button.gtmogs.mark_as_depleted.name": "标记为已枯竭",
+  "button.gtmogs.toggle_waypoint.name": "切换路径点",
+
+  "gtmogs.journeymap.options.layers": "勘探图层",
+  "gtmogs.journeymap.options.layers.ore_veins": "显示矿脉",
+  "gtmogs.journeymap.options.layers.bedrock_fluids": "显示基岩流体矿脉",
+  "gtmogs.journeymap.options.layers.hide_depleted": "隐藏已枯竭矿脉",
+
+  "gtmogs.ownership.name.player": "玩家",
+  "gtmogs.ownership.name.ftb": "FTB 团队",
+  "gtmogs.ownership.name.argonauts": "Argonauts 公会"
+}
