@@ -1,12 +1,12 @@
 # GTMOGS - GregTech Modern Ore Generation: Standalone
 
-## 成功的KJS脚本示例
+## A script that works
 ```javascript
 GTMOGSServerEvents.oreVeins(event => {
-    event.add("kubejs:custom_vein", vein => {
+    event.add("kubejs:large_gold_vein", vein => {
         vein.weight(200)
-        vein.clusterSize(40)
-        vein.density(0.25)
+        vein.clusterSize(120)
+        vein.density(0.5)
         vein.discardChanceOnAirExposure(0)
 
         vein.layer("deepslate")
@@ -18,6 +18,7 @@ GTMOGSServerEvents.oreVeins(event => {
         )
     })
 })
+
 ```
 ## An Unfortunate Disclaimer
 After having isolated the ore generation from GT:M I discovered that the KubeJS integration was broken - even in the original 1.21 branch of GT:M.
