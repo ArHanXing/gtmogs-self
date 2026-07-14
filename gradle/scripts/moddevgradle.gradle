@@ -126,6 +126,9 @@ neoForge {
     }
 }
 
+// Ensure the IDE syncs the ModDevGradle run VM args setup
+neoForge.ideSyncTask(tasks.named("createMinecraftArtifacts").get())
+
 // IDEA no longer automatically downloads sources/javadoc jars for dependencies, so we need to explicitly enable the behavior.
 idea {
     module {

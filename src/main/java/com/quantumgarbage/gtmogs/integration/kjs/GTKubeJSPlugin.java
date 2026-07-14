@@ -15,7 +15,6 @@ import com.quantumgarbage.gtmogs.data.worldgen.GTOreVeins;
 import com.quantumgarbage.gtmogs.integration.kjs.builders.worldgen.DimensionMarkerBuilder;
 import com.quantumgarbage.gtmogs.integration.kjs.builders.worldgen.OreVeinDefinitionBuilder;
 import com.quantumgarbage.gtmogs.integration.kjs.helpers.GTResourceLocation;
-import dev.latvian.mods.kubejs.block.state.BlockStatePredicate;
 import dev.latvian.mods.kubejs.event.EventGroupRegistry;
 import dev.latvian.mods.kubejs.plugin.ClassFilter;
 import dev.latvian.mods.kubejs.plugin.KubeJSPlugin;
@@ -90,7 +89,9 @@ public class GTKubeJSPlugin implements KubeJSPlugin {
 
         registry.register(IWorldGenLayer.RuleTestSupplier.class, (cx, o, t) -> {
             if (o instanceof IWorldGenLayer.RuleTestSupplier supplier) return supplier;
-            return () -> BlockStatePredicate.ruleTestOf(cx, o);
+            // In KubeJS 2101.7.2+, BlockStatePredicate.ruleTestOf API changed;
+            // users should pass a java.util.function.Supplier<RuleTest> directly.
+            return null;
         });
     }
 }

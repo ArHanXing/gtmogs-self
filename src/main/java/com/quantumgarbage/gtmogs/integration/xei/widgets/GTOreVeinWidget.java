@@ -131,6 +131,11 @@ public class GTOreVeinWidget extends WidgetGroup {
     }
 
     public static String getOreName(Holder<OreVeinDefinition> ore) {
-        return ore.getKey().location().toLanguageKey("ore_vein");
+        var location = ore.getKey().location();
+        // Translates the vein ID to a lang key; if no lang entry exists, uses the path as fallback
+        return Component.translatableWithFallback(
+                location.toLanguageKey("ore_vein"),
+                location.getPath().replace('_', ' ').replace("/", ": ")
+        ).getString();
     }
 }
