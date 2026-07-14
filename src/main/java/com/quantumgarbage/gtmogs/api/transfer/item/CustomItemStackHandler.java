@@ -1,7 +1,5 @@
 package com.quantumgarbage.gtmogs.api.transfer.item;
 
-import com.lowdragmc.lowdraglib.syncdata.IContentChangeAware;
-
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
@@ -16,8 +14,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Predicate;
 
-public class CustomItemStackHandler extends ItemStackHandler
-                                    implements IContentChangeAware, INBTSerializable<CompoundTag> {
+public class CustomItemStackHandler extends ItemStackHandler implements INBTSerializable<CompoundTag> {
 
     @Getter
     @Setter

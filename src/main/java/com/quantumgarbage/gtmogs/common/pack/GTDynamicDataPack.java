@@ -1,7 +1,5 @@
 package com.quantumgarbage.gtmogs.common.pack;
 
-import com.lowdragmc.lowdraglib.Platform;
-
 import net.minecraft.SharedConstants;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
@@ -89,7 +87,7 @@ public class GTDynamicDataPack implements PackResources {
         JsonElement lootTableJson = LootTable.DIRECT_CODEC
                 .encodeStart(provider.createSerializationContext(JsonOps.INSTANCE), table).getOrThrow();
         byte[] lootTableBytes = lootTableJson.toString().getBytes(StandardCharsets.UTF_8);
-        Path parent = Platform.getGamePath().resolve("gtmogs/dumped/data");
+        Path parent = GTMOGS.getGameDir().resolve("gtmogs/dumped/data");
 
         if (CONTENTS.getResource(lootTableId) != null) {
             GTMOGS.LOGGER.error("duplicate loot table: {}", lootTableId);
@@ -105,7 +103,7 @@ public class GTDynamicDataPack implements PackResources {
                 .encodeStart(provider.createSerializationContext(JsonOps.INSTANCE), builder.build().carrier())
                 .getOrThrow();
         byte[] dataMapBytes = dataMapJson.toString().getBytes(StandardCharsets.UTF_8);
-        Path parent = Platform.getGamePath().resolve("gtmogs/dumped/data");
+        Path parent = GTMOGS.getGameDir().resolve("gtmogs/dumped/data");
 
         addToData(dataMapId, dataMapBytes);
     }

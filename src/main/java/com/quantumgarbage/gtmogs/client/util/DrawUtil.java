@@ -1,6 +1,6 @@
 package com.quantumgarbage.gtmogs.client.util;
 
-import com.lowdragmc.lowdraglib.utils.ColorUtils;
+import com.lowdragmc.lowdraglib2.utils.ColorUtils;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.RenderType;

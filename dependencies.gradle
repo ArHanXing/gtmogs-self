@@ -1,8 +1,8 @@
 dependencies {
     compileOnly(libs.jetbrains.annotations)
 
-    // LDLib
-    jarJar(api(forge.ldlib.get()))
+    // LDLib2
+    jarJar(api("com.lowdragmc.ldlib2:ldlib2-neoforge-1.21.1:2.2.28:all"))
 
     // Registrate
     jarJar(api(forge.registrate.get()))
@@ -43,7 +43,7 @@ dependencies {
 
     // Runtime Recipe Viewers - uncomment whichever one you want to use //
     localRuntime(forge.emi)
-//    localRuntime(forge.jei.forge.impl)
+    localRuntime(forge.bundles.jei)
 //    localRuntime(forge.bundles.rei.runtime)
 
     // Client-only runtime mods //

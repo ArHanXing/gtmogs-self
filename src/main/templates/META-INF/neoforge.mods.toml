@@ -19,22 +19,22 @@ credits = "GregoriusT, Mr_Touchyou, Zerrens for making GregTech and textures, th
 [[accessTransformers]]
     file = "META-INF/accesstransformer.cfg"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "neoforge"
     type = "required"
     versionRange = "[${neo_version},)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "minecraft"
     type = "required"
     versionRange = "${minecraft_version}"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.${mod_id}]]
-    modId = "ldlib"
+[[dependencies."${mod_id}"]]
+    modId = "ldlib2"
     type = "required"
     embedded = true
     versionRange = "[${ldlib_version}]"
@@ -42,10 +42,10 @@ credits = "GregoriusT, Mr_Touchyou, Zerrens for making GregTech and textures, th
     side = "BOTH"
     [dependencies.${mod_id}.mc-publish]
         ignore = false
-        modrinth = "ldlib"
-        curseforge = "ldlib"
+        modrinth = "ldlib2"
+        curseforge = "ldlib2"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "configuration"
     type = "required"
     embedded = true
@@ -57,35 +57,35 @@ credits = "GregoriusT, Mr_Touchyou, Zerrens for making GregTech and textures, th
         modrinth = "configuration"
         curseforge = "configuration"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "kubejs"
     type = "optional"
     versionRange = "[${kjs_version},)"
     ordering = "AFTER"
     side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "jei"
     type = "optional"
     versionRange = "[${jei_version},)"
     ordering = "AFTER"
     side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "emi"
     type = "optional"
     versionRange = "[${emi_version},)"
     ordering = "AFTER"
     side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "theoneprobe"
     type = "optional"
     versionRange = "[${top_version},)"
     ordering = "NONE"
     side = "BOTH"
 
-[[dependencies.${mod_id}]]
+[[dependencies."${mod_id}"]]
     modId = "jade"
     type = "optional"
     versionRange = "[${jade_version},)"

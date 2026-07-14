@@ -172,8 +172,7 @@ public class GTMOGS {
         }
 
         public static boolean isJEILoaded() {
-            return !(isModLoaded(GTValues.MODID_EMI) || isModLoaded(GTValues.MODID_REI)) &&
-                    isModLoaded(GTValues.MODID_JEI);
+            return isModLoaded(GTValues.MODID_JEI);
         }
 
         public static boolean isREILoaded() {

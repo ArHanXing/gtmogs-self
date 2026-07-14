@@ -1,6 +1,6 @@
 package com.quantumgarbage.gtmogs.integration.map.ftbchunks.veins.ore;
 
-import com.lowdragmc.lowdraglib.gui.texture.ItemStackTexture;
+import com.lowdragmc.lowdraglib2.gui.texture.ItemStackTexture;
 
 import com.quantumgarbage.gtmogs.GTMOGS;
 import com.quantumgarbage.gtmogs.integration.map.MapIntegrationUtils;

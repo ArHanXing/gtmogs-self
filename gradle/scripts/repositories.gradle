@@ -12,9 +12,9 @@ repositories {
         url = "https://modmaven.dev/"
     }
 
-    maven { // LDLib, Shimmer
-        name = "FirstDarkDev Maven"
-        url = "https://maven.firstdarkdev.xyz/snapshots/"
+    maven { // LDLib2
+        name = "FirstDarkDev LDLib2"
+        url = "https://maven.firstdark.dev/snapshots"
     }
 
     exclusiveContent { // KubeJS and Rhino
